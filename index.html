@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>My Mobile Page</title>
+    <link rel="stylesheet" href="themes_blackorange/myTheme.css" />
+    <link rel="stylesheet" href="themes_blackorange/jquery.mobile.icons.min.css" />
+    <link href="js_files/jquery.mobile-1.4.5.css" rel="stylesheet" type="text/css" />
+    <script src="js_files/jquery.js" type="text/javascript"></script>
+    <script src="js_files/jquery.mobile-1.4.5.js" type="text/javascript"></script>
+</head>
+<body>
+    <div>
+        <div data-role="page" id="myPortfolio" data-theme="d">
+            <div data-role="header" data-position="fixed">
+                <h1>My Portfolio</h1>
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#myPortfolio" data-transition="slide" data-icon="home" data-direction="reverse">My Portfolio</a></li>
+						<li><a href="#contactMe" data-transition="slide" data-icon="info">Contact Me</a></li>
+					</ul>
+				</div>
+            </div>
+            <div data-role="content" class="ui-content">
+                <h1>My Portfolio</h1>
+                <p>Welcome to my first page.</p>
+				<div data-role="collapsible">
+					<h1>Past Work</h1>
+					<p>Look at my past work</p>
+					<ul>
+						<li>Ministry of Works and Infrastructure - 2009 - Present</li>
+						<li>Freelance - 2003 - 2009</li>
+					</ul>
+				</div>
+				<div data-role="collapsible">
+					<h1>Education</h1>
+					<p>Look at my education</p>
+					<ul>
+						<li>MSc. ISM - University of Greenwich 2009</li>
+						<li>LL.B. (Hons) - University of London 2001</li>
+					</ul>
+				</div>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h2>&copy; GCASoft</h2>
+            </div>
+        </div>
+        <div data-role="page" id="contactMe" data-theme="d">
+            <div data-role="header" data-position="fixed">
+                <h1>Contact Me</h1>
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#myPortfolio" data-transition="slide" data-icon="home" data-direction="reverse">My Portfolio</a></li>
+						<li><a href="#contactMe" data-transition="slide" data-icon="info">Contact Me</a></li>
+					</ul>
+				</div>
+            </div>
+            <div data-role="content" class="ui-content">
+                <h1>Contact Me</h1>
+                <p>Please use the form below to contact me.</p>
+				<form>
+					<label for="txtFirstName">First Name</label>
+					<input type="text" name="txtFirstName" id="txtFirstName" />
+					<label for="txtLastName">Last Name</label>
+					<input type="text" name="txtLastName" id="txtLastName" />
+					<label for="txtEmailAddress">Email Address</label>
+					<input type="text" name="txtEmailAddress" id="txtEmailAddress" />
+					<label for="txtComments">Comments</label>
+					<textarea name="txtComments" id="txtComments" placeholder="Enter brief comments about what you've seen."></textarea>
+					<label for="sldRating">Rate Me (between 0 and 5)</label>
+					<input type="range" name="sldRating" id="sldRating" min="0" max="5" />
+					<input type="submit" name="btnSubmit" id="btnSubmit" value="Send" />
+				</form>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h2>&copy; GCASoft</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
